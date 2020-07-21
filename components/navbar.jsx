@@ -1,21 +1,50 @@
-import React from 'react'
+import React, { useState, useEffect  } from 'react'
 import styles from '../styles/navbar.module.css'
 import Link from 'next/link'
+import { GrMenu } from 'react-icons/gr'
 
 export const Navbar = () => {
+
+    const [isNavVisible, setIsNavVisible] = useState(true)
+    const [isSmallScreen, setisSmallScreen] = useState(false)
+
+    useEffect(() => {
+        const mediaQuery = window.matchMedia("(max-width: 700px)")
+        mediaQuery.addListener(handleMediaQueryChange)
+        handleMediaQueryChange(mediaQuery)
+
+        return () => {
+            mediaQuery.removeListener(handleMediaQueryChange)
+        }
+    }, [])
+
+    const toggleNav = () => {
+        setIsNavVisible(!isNavVisible)
+    }
+
+    const handleMediaQueryChange = mediaQuery => {
+        if(mediaQuery.matches) {
+            setisSmallScreen(true)
+        } else {
+            setisSmallScreen(false)
+        }
+    }
+
     return (
-        <nav className={styles.navbar}>
+        <header className={styles.header}>
             <img className={styles.logo} src="/LOGO.png" alt="refinity-logo" />
-            
-            <ul className={styles.navlinks}>
-                <li><Link href="/about"><a>About Us</a></Link></li>
-                <li><Link href="/programs"><a>Programs</a></Link></li>
-                <li><Link href="/volunteer"><a>Volunteer</a></Link></li>
-                <li><Link href="/contact"><a>Contact us</a></Link></li>
-                <li><Link href="/donate"><a>donate</a></Link></li>
-                <li><Link href="/enroll"><button>Enroll</button></Link></li>
-            </ul>
-        </nav>
+            {(!isSmallScreen || isNavVisible) && (
+                 <nav className={styles.navbar}>
+                    <Link href="/about"><a>About Us</a></Link>
+                    <Link href="/programs"><a>Programs</a></Link>
+                    <Link href="/volunteer"><a>Volunteer</a></Link>
+                    <Link href="/contact"><a>Contact us</a></Link>
+                    <Link href="/donate"><a>donate</a></Link>
+                    <Link href="/enroll"><button>Enroll</button></Link>
+                </nav>
+            )}
+            <a onClick={toggleNav} className={styles.menuIcon}><GrMenu /></a>
+        </header>
     )
 }
 

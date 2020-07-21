@@ -7,10 +7,10 @@
     backdrop-filter: blur(250px);
     max-width: 84%;
     margin: 0 auto;
-    height: 70vh;
+    height: 80vh;
     border-radius: 20px;
     position: relative;
-    top: 10vh;
+    top: 15vh;
 }
 
 .heroBox {
