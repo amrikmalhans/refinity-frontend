@@ -1,60 +1,96 @@
-.header {
+.Header {
+    position: fixed;
+    top: 0; /* Stick it to the top */
+    max-height: 70px;
+    width: 100vw;
     display: grid;
     grid-template-areas: "logo nav";
-    position: fixed;
     z-index: 999;
-    align-items: center;
-    background-color:  rgba(255, 255, 255, 0.8);
-    height: 12vh;
+    background: rgba(255, 255, 255, 0.7);
     box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
     border-radius: 0px 0px 20px 20px;
-    width: 100%;
-}
-
-.navbar {
-    grid-area: nav;
+  }
+  
+  .Logo {
+    grid-area: logo;
+    height: 70px;
+  }
+  
+  .Nav {
     display: grid;
+    grid-area: nav;
     grid-template-columns: repeat(6, auto);
     align-items: center;
     justify-items: center;
-}
-
-.navbar a {
+    z-index: 888;
+  }
+  .Nav a {
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.5s;
     text-decoration: none;
-    color: #000000;
-    font-size: 1.2rem;
-}
-
-.menuIcon {
+  }
+  .Nav a:hover {
+    transform: scale(1.1);
+  }
+  .Nav button {
+    padding: 10px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    color: #000;
+    font-weight: 600;
+    background: #C4C4C4;
+border-radius: 10px;
+    box-shadow: 0px 5px 0px 0px #d4d4d4;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 70ms;
+  }
+  
+  .Nav button:active {
+    transform: translateY(3px);
+    box-shadow: 0px 2px 0px 0px #d4d4d4;
+  }
+  
+  .Burger {
     display: none;
     grid-area: burger;
-    margin: 0 20px 0 0;
+    margin: 10px 20px 0 0;
     padding: 0;
     justify-self: end;
-    font-size: 2rem;
+    font-size: 40px;
     border: none;
     background: none;
     outline: none;
     transition: 0.1s;
     cursor: pointer;
-
-}
-
-@media (max-width: 700px) {
-    .header {
-        grid-template-areas: "logo burger" "nav nav";
-        
+  }
+  .Burger:active {
+    transform: scale(1.1);
+  }
+  
+  @media (max-width: 800px) {
+    .Header {
+      grid-template-areas: "logo burger" "nav nav";
+      border-radius: 0px 0px 0px 0px;
     }
-
-    .navbar {
-        grid-template-columns: none;
-        grid-template-rows: repeat(6, auto);
-        row-gap: 20px;
-        background-color:  rgba(255, 255, 255, 0.8);
-        opacity: 1;
+    .Nav {
+      grid-template-rows: repeat(6, auto);
+      grid-template-columns: none;
+      height: 100vh;
+      grid-row-gap: 0px;
+      padding: 40px 0 100px;
+      background: #91E2A3;
+      box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
     }
-
-    .menuIcon {
-        display: block;
+    .Burger {
+      display: inline;
     }
-}
+  }
+
+
+  
