@@ -5,7 +5,7 @@ import { GrMenu } from 'react-icons/gr'
 import { CSSTransition } from 'react-transition-group'
 
 export const Navbar = () => {
-
+ 
     const [isNavVisible, setIsNavVisible] = useState(true)
     const [isSmallScreen, setisSmallScreen] = useState(false)
 
