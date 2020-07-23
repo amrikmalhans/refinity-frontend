@@ -1,0 +1,21 @@
+.TestBox {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 3em;
+    border-radius: 20px;
+}
+
+.Person {
+    display: flex;
+    align-items: center;
+    margin-left: 50%;
+}
+
+.Person img {
+    width: 80px;
+    height: 80px;
+    border-radius: 200%;
+    margin-right: 1em;
+}

@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import { Header } from '../components/Header'
 import Car from '../components/Carousel'
+import Testimonial from '../components/Testimonial'
+import { Footer } from '../components/Footer'
 
 export default function Home() {
   return (
@@ -12,6 +14,8 @@ export default function Home() {
       <main>
         <Header />
         <Car />
+        <Testimonial />
+        <Footer />
       </main>
     </div>
   )

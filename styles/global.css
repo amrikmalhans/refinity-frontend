@@ -40,3 +40,39 @@ body {
     padding-top: 2rem;
     padding-bottom: 2.5rem;
   }
+
+  .Carousel {
+    max-width: 80vw;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 3em;
+    padding-top: .5em;
+    border-radius: 20px;
+}
+
+.Slider {
+  width: 100%;
+}
+
+
+.Slider img {
+  border-radius: 20px;
+  width: 100%;
+  height: inherit;
+}
+
+
+.CarouselButton {
+  background-color: #91E2A3;
+  border: none;
+  height: 2vh;
+  margin: 1.5em;
+  font-size: 2.5rem;
+}
+
+.CarouselButton:focus {
+  outline: none;
+}
+
