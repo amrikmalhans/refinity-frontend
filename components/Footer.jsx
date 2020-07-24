@@ -11,12 +11,10 @@ export const Footer = () => {
                     <p>Or learn more:</p>
                 </div>
                 <nav className={styles.FooterNav}>
-                  <ul>
-                      <li><Link href="/about">About Us</Link></li>
-                      <li><Link href="/programs">Programs</Link></li>
-                      <li><Link href="/donate">Donate</Link></li>
-                      <li><Link href="/contact">Contact Us</Link></li>
-                  </ul>  
+                    <Link href="/about"><a>About Us</a></Link>
+                    <Link href="/programs"><a>Programs</a></Link>
+                    <Link href="/donate"><a>Donate</a></Link>
+                    <Link href="/contact"><a>Contact Us</a></Link> 
                 </nav>
             </footer>
     )

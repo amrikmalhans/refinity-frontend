@@ -28,16 +28,23 @@ text-align: center;
     box-shadow: 0px 2px 0px 0px #d4d4d4;
   }
 
-
-.FooterNav ul {
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    column-gap: 3em;
-    list-style: none;
-    margin-top: 10vh;
+.EnrollDiv p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-left: 15px;
 }
 
-.FooterNav ul li {
+.FooterNav {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    column-gap: 4em;
+    list-style: none;
+    margin-top: 10vh;
+    padding: 2em;
+}
+
+.FooterNav a {
     padding: 12px;
     outline: none;
     border: none;
@@ -49,10 +56,10 @@ text-align: center;
     box-shadow: 0px 5px 0px 0px #d4d4d4;
     border-radius: 10px;
     cursor: pointer;
-    transition: 70ms;   
+    transition: 70ms;
 }
 
-.FooterNav ul li:active {
+.FooterNav a:active {
     transform: translateY(3px);
     box-shadow: 0px 2px 0px 0px #d4d4d4;
   }
