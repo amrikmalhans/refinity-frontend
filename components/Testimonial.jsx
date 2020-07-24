@@ -10,43 +10,45 @@ import styles from "../styles/testimonial.module.css";
         <>
           <h2>What they say about us</h2>
           <CarouselProvider
-          naturalSlideWidth={150}
-          naturalSlideHeight={55}
+          naturalSlideWidth={190}
+          naturalSlideHeight={100}
           totalSlides={3}
           className="Carousel"
           isPlaying={true}
           >
              <ButtonBack className="CarouselButton"> <IoIosArrowBack /></ButtonBack>
-            <Slider className="Slider">
+             <Slider className="Slider">
               <Slide index={0}>
                   <div className={styles.TestBox}>
-                    <div>
-
-                    
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <div className={styles.Content}>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. and scrambled it to make a type specimen book.</p>
                     <div className={styles.Person}>
                         <img src="/dummy.jpg" alt="testimonial" />
                         <h4>Ronald Richard</h4>
                     </div>
-                    </div>
+                  </div>
                   </div>
               </Slide>
               <Slide index={1}>
                   <div className={styles.TestBox}>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                  <div className={styles.Content}>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. and scrambled it to make a type specimen book.</p>
                     <div className={styles.Person}>
                         <img src="/dummy.jpg" alt="testimonial" />
                         <h4>Ronald Richard</h4>
                     </div>
                   </div>
+                  </div>
               </Slide>
               <Slide index={2}>
                   <div className={styles.TestBox}>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                  <div className={styles.Content}>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. and scrambled it to make a type specimen book.</p>
                     <div className={styles.Person}>
                         <img src="/dummy.jpg" alt="testimonial" />
                         <h4>Ronald Richard</h4>
                     </div>
+                  </div>
                   </div>
               </Slide>
             </Slider>
