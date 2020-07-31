@@ -1,0 +1,55 @@
+.Footer {
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-top: 5em;
+    padding: 1em;
+}
+
+.Footer p {
+    text-align: center;
+}
+
+.items {
+    display: flex;
+    justify-content: space-around;    
+    margin-top: 2em;
+}
+
+.SocialIcons {
+    font-size: 3rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 10px;
+}
+
+.Emails div span{
+    font-weight: 400;
+    font-size: .9rem;
+}
+
+.Emails div a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+    font-size: .9rem;
+}
+
+@media (max-width: 800px) {
+
+    .Footer {
+        text-align: center;
+    }
+ 
+    .items {
+        flex-direction: column;    
+        padding: .1em;
+    }
+
+    .SocialIcons {
+        font-size: 3rem;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: center;   
+        margin-bottom: .4em; 
+}
+    
+}
