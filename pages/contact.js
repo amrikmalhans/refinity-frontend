@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { Navbar } from '../components/navbar'
 import { Hero } from '../components/contactPage/Hero'
 import { ContactForm } from '../components/contactPage/Form'
+import { Footer } from '../components/Footer'
 
 export default function Home() {
   return (
@@ -13,7 +14,8 @@ export default function Home() {
       <main>
         <Navbar />
         <Hero />
-        <ContactForm />
+        <ContactForm /> 
+        <Footer />
       </main>
     </div>
   )

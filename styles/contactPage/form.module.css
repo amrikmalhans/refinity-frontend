@@ -1,5 +1,5 @@
 .Form {
-    background-color: #fafafa;
+    background-color: rgba(255, 255, 255, 0.7);
     width: 50%;
     margin: 0 auto;
     margin-top: 5vh;
@@ -7,14 +7,61 @@
     flex-direction: column;
     justify-content: center;
     padding: 1.7em;
-    border-radius: 1em;
+    border-radius: 8px;
 }
 
-.Form input {
+.Form input[type='text'], .Form input[type='email'], .Form textarea {
+    background: transparent;
     padding: 7px;
     margin-bottom: 1em;
+    border: none;
+    border-bottom: 2px solid #91E2A3;
+    transition: all 0.3s;   
 }
 
 .Form textarea {
-    height: 25vh;
+    height: 20vh;
+}
+
+.Form h4 {
+    text-transform: uppercase;
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 1em;
+    border-bottom: 3px solid #333;
+    width: 205px;
+    padding-bottom: .5em;
+}
+
+.Form input[type='text']:focus, 
+.Form input[type='email']:focus,
+.Form textarea:focus{
+    outline: none;
+    border-bottom: 2px solid #73af80;
+}
+
+.Form input[type='submit'] {
+    background-color: transparent;
+    border: 3px solid #91E2A3;
+    width: 150px;
+    padding: 8px 8px;
+    margin-left: auto;
+    transition: all .3s;
+}
+
+.Form input[type='submit']:hover {
+    background-color: #91E2A3;
+    color: #fff;
+}
+
+
+@media (max-width: 800px) {
+    .Form {
+        width: 92%;
+    }
+
+.Form input[type='text'], .Form input[type='email'], .Form textarea {
+   font-size: .8rem;
+}
+    
 }
