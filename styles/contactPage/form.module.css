@@ -1,0 +1,20 @@
+.Form {
+    background-color: #fafafa;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.7em;
+    border-radius: 1em;
+}
+
+.Form input {
+    padding: 7px;
+    margin-bottom: 1em;
+}
+
+.Form textarea {
+    height: 25vh;
+}
