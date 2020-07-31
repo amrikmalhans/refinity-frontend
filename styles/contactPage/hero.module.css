@@ -1,0 +1,14 @@
+.Hero {
+    background-color: #fafafa;
+    max-width: 90vw;
+    margin: 0 auto;
+    margin-top: 14vh;
+    padding: 5em;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.Hero h1 {
+    font-size: 4rem;
+    margin-bottom: .5em;
+}

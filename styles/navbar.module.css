@@ -34,6 +34,8 @@
   }
   .Nav a:hover {
     transform: scale(1.1);
+    text-decoration: none;
+    color: #333;
   }
   .Nav button {
     padding: 10px;
