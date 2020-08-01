@@ -1,5 +1,67 @@
 .MainFooter {
     display: grid;
     grid-template-columns: auto auto auto;
-    background-color: #3b3f46   ;
+    background-color: #333;
+    justify-content: space-evenly;
+    color: #fafafa;
+    padding-bottom: 2em;
+}
+
+.MainFooter div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+}
+
+.MainFooter div h5 {
+   font-size: 1.5rem;
+   margin-bottom: .6em;
+}
+
+
+.MainFooter div .Icons {
+    margin-top: 0vh;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    font-size: 2.1rem;
+    color: #fff;
+}
+
+.MainFooter div a {
+    text-decoration: none;
+    color: #c8c7c7;
+    font-weight: 300;
+    font-size: .9rem;
+    transition: all .2s;
+}
+
+.MainFooter div a:hover {
+    color: #fff;
+}
+
+
+
+@media (max-width: 800px) {
+    .MainFooter {
+        display: grid;
+        grid-template-columns: auto;
+       
+    }
+    
+    .MainFooter div {
+        margin-top: 5vh;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .MainFooter div h5 {
+       font-size: 1.3rem;
+       margin-bottom: .3em;
+    }
+    
+    
+    .MainFooter div .Icons {
+        column-gap: 14px;
+    }
+    
 }

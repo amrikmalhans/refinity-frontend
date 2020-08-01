@@ -15,7 +15,7 @@ export const MainFooter = () => {
                 <Link href="/volunteer"><a>Volunteer</a></Link>
                 <Link href="/contact"><a>Contact us</a></Link>
                 <Link href="/donate"><a>donate</a></Link>
-                <Link href="/enroll"><button>Enroll</button></Link>
+                <Link href="/enroll"><a>Enroll</a></Link>
             </div>
 
             <div>
@@ -27,10 +27,12 @@ export const MainFooter = () => {
             </div>
 
             <div>
-                <h5>Check us out</h5>
-                <FaInstagram />
-                <FiTwitter />
-                <FcReddit />
+                <h5>Check us out here</h5>
+                <div className={styles.Icons}>
+                    <FaInstagram />
+                    <FiTwitter />
+                    <FcReddit />
+                </div>
             </div>
         </footer>
     )
