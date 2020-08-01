@@ -1,0 +1,5 @@
+.MainFooter {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #3b3f46   ;
+}

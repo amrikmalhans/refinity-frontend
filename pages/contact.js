@@ -3,6 +3,7 @@ import { Navbar } from '../components/navbar'
 import { Hero } from '../components/contactPage/Hero'
 import { ContactForm } from '../components/contactPage/Form'
 import { Footer } from '../components/contactPage/Footer'
+import { MainFooter } from '../components/mainFooter'
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <Hero />
         <ContactForm /> 
         <Footer />
+        <MainFooter />
       </main>
     </div>
   )
