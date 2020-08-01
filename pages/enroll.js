@@ -1,10 +1,10 @@
 import Head from 'next/head'
 import { Navbar } from '../components/navbar'
-import { Hero } from '../components/contactPage/Hero'
-import { ContactForm } from '../components/contactPage/Form'
 import { Footer } from '../components/contactPage/Footer'
 import { MainFooter } from '../components/mainFooter'
-  
+import { EnrollHero } from '../components/enrollPage/hero'
+import { ContactForm } from '../components/contactPage/Form'
+
 export default function Home() {
   return (
     <div>
@@ -14,8 +14,7 @@ export default function Home() {
 
       <main>
         <Navbar />
-        <Hero />
-        <ContactForm /> 
+        <EnrollHero />
         <Footer />
         <MainFooter />
       </main>

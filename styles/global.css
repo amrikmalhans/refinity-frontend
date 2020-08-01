@@ -121,3 +121,24 @@ body {
 }
 
 }
+
+
+button {
+  padding: 10px;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  color: #000;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.7);
+border-radius: 10px;
+  box-shadow: 0px 5px 0px 0px #d4d4d4;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 70ms;
+}
+
+button:active {
+  transform: translateY(3px);
+  box-shadow: 0px 2px 0px 0px #d4d4d4;
+}

@@ -1,0 +1,15 @@
+.Header {
+
+    margin-top: 10vh;
+    padding: 2em;
+}
+
+.Header div button {
+    margin-top: 4vh;
+    margin-right: 2em;
+}
+
+.Enroll {
+    display: flex;
+    margin-top: 10vh;
+}
