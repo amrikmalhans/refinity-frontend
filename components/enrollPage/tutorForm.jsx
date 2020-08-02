@@ -1,10 +1,9 @@
 import React from 'react'
 
-
-export const EnrollForm = () => {
+export const TutorForm = () => {
     return (
         <form className="Form">
-            <h5>General Enrollment</h5>
+            <h5>Tutor Applications</h5>
             <label htmlFor="name">Full Name:</label>
             <input placeholder="Write your full name here.." type="text" id="name" name="name" /> 
             <label htmlFor="email">Email:</label>
@@ -336,7 +335,7 @@ export const EnrollForm = () => {
                 <option value="+14:00">(GMT +14:00) Line Islands, Tokelau</option>
             </select>
 
-            <label htmlFor="service" id="service">Services Requested:</label>
+            <label htmlFor="service" id="service">Subjects you are interested in tutoring:</label>
             <select>
                 <option value="Tutoring">Tutoring</option>
                 <option value="SVS (notes)">SVS (notes)</option>
@@ -348,6 +347,8 @@ export const EnrollForm = () => {
                 <option value="IB">IB</option>
                 <option value="Honors">Honors</option>
             </select>
+            <label htmlFor="report">Please upload your ap score report here (and blur out your personal information):</label>
+            <input type="file" id="report" name="report" />
 
             <label htmlFor="interests">Professional interests:</label>
             <textarea placeholder="some of your professional interests.." required></textarea>
@@ -362,18 +363,22 @@ export const EnrollForm = () => {
             </span>
             
             <span className="form-span">
-            <label htmlFor="mail-list" id="mail-list">Opt-in to receive department specific emails: Tutoring</label>
+            <label htmlFor="mail-list" id="mail-list">Opt-in to receive department specific emails: Tutoring
             <input type="checkbox" id="mail-list" name="mail-list" value="mail-list" /> 
+            </label>
             </span>
              
              <span className="form-span">
-                <label htmlFor="mail-list" id="mail-list">Opt-in to receive department specific emails: Academics/SVS</label>
+                <label htmlFor="mail-list" id="mail-list">Opt-in to receive department specific emails: Academics/SVS
                 <input type="checkbox" id="mail-list" name="mail-list" value="mail-list" />  
+                </label>
              </span>
             
             <span className="form-span">
-                <label htmlFor="mail-list" id="mail-list">Opt-in to receive department specific emails: Relations</label>
+                <label htmlFor="mail-list" id="mail-list">Opt-in to receive department specific emails: Relations
                 <input type="checkbox" id="mail-list" name="mail-list" value="mail-list" />  
+                </label>
+                
             </span>
             
 

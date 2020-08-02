@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import styles from '../../styles/enrollPage/enrollHero.module.css'
 import { EnrollForm } from '../enrollPage/enrollForm'
+import { TutorForm } from '../enrollPage/tutorForm'
 
 export const EnrollHero = () => {
     const [shown, setShown] = useState(false)
@@ -21,7 +22,7 @@ export const EnrollHero = () => {
                 <button onClick={setShow}>Tutor Applications</button>
             </div>
         </header>
-        {shown === false ? 'mao' : <EnrollForm />}
+        {shown === false ? <TutorForm /> : <EnrollForm />}
         </div>
     )
 }

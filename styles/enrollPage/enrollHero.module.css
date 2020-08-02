@@ -1,5 +1,4 @@
 .Header {
-
     margin-top: 10vh;
     padding: 2em;
 }
@@ -12,4 +11,24 @@
 .Enroll {
     display: flex;
     margin-top: 10vh;
+}
+
+.Header h1 {
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .Enroll {
+        flex-direction: column;
+    }
+    .Header div button {
+        margin-top: 4vh;
+        margin-right: 1em;
+        font-size: 1rem;
+    }
+
+    .Header div {
+        display: flex;
+        justify-content: center;
+    }
 }

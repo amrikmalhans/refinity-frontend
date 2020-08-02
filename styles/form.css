@@ -10,7 +10,12 @@
     border-radius: 8px;
 }
 
-.Form input[type='text'], .Form input[type='email'], .Form textarea {
+label {
+    padding: .3em;
+}
+
+
+.Form input[type='text'], .Form input[  type='email'], .Form textarea {
     background: transparent;
     padding: 7px;
     margin-bottom: 1em;
@@ -66,19 +71,6 @@
 }
 
 
-@media (max-width: 800px) {
-    .Form {
-        width: 92%;
-    }
-
-.Form input[type='text'], .Form input[type='email'], .Form textarea {
-   font-size: .8rem;
-}
-    
-}
-
-
-
 /*----------------------------------------------------------------------------------------------------------*/
 /*E N R O L L  F O R M */
 /*----------------------------------------------------------------------------------------------------------*/
@@ -111,4 +103,55 @@ select:focus {
 
 input[type='checkbox'] {
     margin-left: .8em;
+}
+
+input[type='file'] {
+    padding: .5em 0 1em 0;
+}
+
+
+@media (max-width: 800px) {
+    .Form {
+        width: 92%;
+    }
+
+    .Form input[type='text'], .Form input[type='email'], .Form textarea {
+    font-size: .8rem;
+    }
+
+    .Form h5 {
+        text-transform: uppercase;
+        color: #333;
+        font-size: 1.4rem;
+        margin-bottom: 1em;
+        border-bottom: 3px solid #333;
+        width: 250px;
+        padding-bottom: .5em;
+    }
+
+    select {
+        border: none;
+        padding: .2em;
+        margin-top: .2em;
+        margin-bottom: .2em;
+    }
+
+    .form-span p {
+        font-size: .7rem;
+    }
+
+    .form-span label {
+        font-size: .9rem;
+    }
+
+    input[type='checkbox'] {
+        margin-left: .5em;
+    }
+
+    input[type='file'] {
+    padding: .5em 0 1em 0;
+}
+
+
+    
 }
