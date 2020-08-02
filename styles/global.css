@@ -147,3 +147,14 @@ button:active {
 button:focus {
   outline: none;
 }
+
+.Icon {
+  border: 2px solid white;
+  border-radius: 200px;
+  padding: .2em;
+}
+
+
+.Icon:hover {
+  cursor: pointer;
+}
