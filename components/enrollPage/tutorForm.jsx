@@ -1,15 +1,29 @@
-import React from 'react'
+import React, { useState } from 'react'
+import useFormState from '../../hooks/useFormState'
 
 export const TutorForm = () => {
+    const [name, setName] = useFormState("");
+    const [email, setEmail] = useFormState("");
+    const [grade, setGrade] = useFormState("");
+    const [country, setCountry] = useFormState("US");
+    const [timezone, setTimezone] = useFormState("-8:00");
+    const [service, setService] = useFormState("Tutoring");
+    const [interest, setInterest] = useFormState("");
+    const [facts, setFacts] = useFormState("");
+    const [mailList, setMailList] = useState(true);
+    const [tutoring, setTutoring] = useState(false);
+    const [academics, setAcademics] = useState(false);
+    const [relations, setRelations] = useState(false);
+
     return (
         <form className="Form">
             <h5>Tutor Applications</h5>
             <label htmlFor="name">Full Name:</label>
-            <input placeholder="Write your full name here.." type="text" id="name" name="name" /> 
+            <input placeholder="Write your full name here.." type="text" id="name" name="name" value={name} onChange={setName}/> 
             <label htmlFor="email">Email:</label>
-            <input placeholder="Let us know how to contact you back.." type="email" id="email" name="email" /> 
+            <input placeholder="Let us know how to contact you back.." type="email" id="email" name="email"  value={email} onChange={setEmail}/> 
             <label htmlFor="cars">Grade:</label>
-            <select name="grade" id="grade">
+            <select  value={grade} onChange={setGrade} name="grade" id="grade">
             <option value="Grade 9">Grade 9</option>
                 <option value="Grade 10">Grade 10</option>
                 <option value="Grade 11">Grade 11</option>
@@ -17,7 +31,7 @@ export const TutorForm = () => {
                 <option value="College Student">College Student</option>
             </select> 
             <label htmlFor="location" id="location">Location:</label>
-            <select name="country" className="form-control" id="country">
+            <select value={country} onChange={setCountry} name="country" className="form-control" id="country">
             <option value="0" label="Select a country ... " value="selected">Select a country ... </option>
             <optgroup id="country-optgroup-Africa" label="Africa">
                 <option value="DZ" label="Algeria">Algeria</option>
@@ -285,7 +299,7 @@ export const TutorForm = () => {
             </select>   
 
             <label htmlFor="time-zone" id="time-zone">Time Zone:</label>
-            <select name="timezone_offset" id="timezone-offset" className="span5">
+            <select value={timezone} onChange={setTimezone} name="timezone_offset" id="timezone-offset" className="span5">
                 <option value="-12:00">(GMT -12:00) Eniwetok, Kwajalein</option>
                 <option value="-11:00">(GMT -11:00) Midway Island, Samoa</option>
                 <option value="-10:00">(GMT -10:00) Hawaii</option>
@@ -329,7 +343,7 @@ export const TutorForm = () => {
             </select>
 
             <label htmlFor="service" id="service">Subjects you are interested in tutoring:</label>
-            <select>
+            <select value={service} onChange={setService}>
                 <option value="Tutoring">Tutoring</option>
                 <option value="SVS (notes)">SVS (notes)</option>
             </select>
@@ -344,32 +358,32 @@ export const TutorForm = () => {
             <input type="file" id="report" name="report" />
 
             <label htmlFor="interests">Professional interests:</label>
-            <textarea placeholder="some of your professional interests.." required></textarea>
+            <textarea value={interest} onChange={setInterest} placeholder="some of your professional interests.." required></textarea>
 
             <label htmlFor="facts">Fun facts about yourself (optional):</label>
-            <textarea placeholder="Fun facts about yourself.."></textarea> 
+            <textarea value={facts} onChange={setFacts} placeholder="Fun facts about yourself.."></textarea> 
 
             <span className="form-span">
                 <label htmlFor="mail-list" id="mail-list">Opt-in to our mailing list:</label>
-                <input type="checkbox" id="mail-list" name="mail-list" value="mail-list" />  
+                <input checked={mailList} onChange={() => setMailList(!mailList)} type="checkbox" id="mail-list" name="mail-list" value="mail-list" />  
                 <p>(You will be notified when Refinity has something important to share with all our members) </p>
             </span>
             
             <span className="form-span">
             <label htmlFor="mail-list" id="mail-list">Opt-in to receive department specific emails: Tutoring
-            <input type="checkbox" id="mail-list" name="mail-list" value="mail-list" /> 
+            <input checked={tutoring} onChange={() => setTutoring(!tutoring)} type="checkbox" id="mail-list" name="mail-list" value="mail-list" /> 
             </label>
             </span>
              
              <span className="form-span">
                 <label htmlFor="mail-list" id="mail-list">Opt-in to receive department specific emails: Academics/SVS
-                <input type="checkbox" id="mail-list" name="mail-list" value="mail-list" />  
+                <input checked={academics} onChange={() => setAcademics(!academics)} type="checkbox" id="mail-list" name="mail-list" value="mail-list" />  
                 </label>
              </span>
             
             <span className="form-span">
                 <label htmlFor="mail-list" id="mail-list">Opt-in to receive department specific emails: Relations
-                <input type="checkbox" id="mail-list" name="mail-list" value="mail-list" />  
+                <input checked={relations} onChange={() => setRelations(!relations)} type="checkbox" id="mail-list" name="mail-list" value="mail-list" />  
                 </label>
                 
             </span>
