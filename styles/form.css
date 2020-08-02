@@ -23,15 +23,26 @@
     height: 20vh;
 }
 
+.Form h5 {
+    text-transform: uppercase;
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 1em;
+    border-bottom: 3px solid #333;
+    width: 330px;
+    padding-bottom: .5em;
+}
+
 .Form h4 {
     text-transform: uppercase;
     color: #333;
     font-size: 1.8rem;
     margin-bottom: 1em;
     border-bottom: 3px solid #333;
-    width: 205px;
+    width: 200px;
     padding-bottom: .5em;
 }
+
 
 .Form input[type='text']:focus, 
 .Form input[type='email']:focus,
@@ -64,4 +75,40 @@
    font-size: .8rem;
 }
     
+}
+
+
+
+/*----------------------------------------------------------------------------------------------------------*/
+/*E N R O L L  F O R M */
+/*----------------------------------------------------------------------------------------------------------*/
+
+
+
+select {
+    border: none;
+    padding: .3em;
+    border-radius: 3px;
+    margin-top: .3em;
+    margin-bottom: .3em;
+    cursor: pointer;
+}
+
+
+
+select:focus {
+    outline: 2.5px solid #91E2A3;
+}
+
+.form-span p {
+    font-size: .8rem;
+
+}
+
+.form-span label {
+    font-size: .9rem;
+}
+
+input[type='checkbox'] {
+    margin-left: .8em;
 }

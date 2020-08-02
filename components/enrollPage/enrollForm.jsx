@@ -1,10 +1,9 @@
 import React from 'react'
-import styles from '../../styles/contactPage/form.module.css'
 
 export const EnrollForm = () => {
     return (
-        <form className={styles.Form}>
-            <h4>Contact Us</h4>
+        <form className="Form">
+            <h5>General Enrollment</h5>
             <label htmlFor="name">Full Name:</label>
             <input placeholder="Write your full name here.." type="text" id="name" name="name" /> 
             <label htmlFor="email">Email:</label>
@@ -355,8 +354,28 @@ export const EnrollForm = () => {
             <label htmlFor="facts">Fun facts about yourself (optional):</label>
             <textarea placeholder="Fun facts about yourself.."></textarea> 
 
-            <label htmlFor="mail-list" id="mail-list">Opt-in to our mailing list: You will be notified when Refinity has something important to share with all our members</label>
-            <input type="checkbox" id="mail-list" name="mail-list" value="mail-list" />  
+            <span className="form-span">
+                <label htmlFor="mail-list" id="mail-list">Opt-in to our mailing list:</label>
+                <input type="checkbox" id="mail-list" name="mail-list" value="mail-list" checked />  
+                <p>(You will be notified when Refinity has something important to share with all our members) </p>
+            </span>
+            
+            <span className="form-span">
+            <label htmlFor="mail-list" id="mail-list">Opt-in to receive department specific emails: Tutoring</label>
+            <input type="checkbox" id="mail-list" name="mail-list" value="mail-list" /> 
+            </span>
+             
+             <span className="form-span">
+                <label htmlFor="mail-list" id="mail-list">Opt-in to receive department specific emails: Academics/SVS</label>
+                <input type="checkbox" id="mail-list" name="mail-list" value="mail-list" />  
+             </span>
+            
+            <span className="form-span">
+                <label htmlFor="mail-list" id="mail-list">Opt-in to receive department specific emails: Relations</label>
+                <input type="checkbox" id="mail-list" name="mail-list" value="mail-list" />  
+            </span>
+            
+
             <input type="submit" value="Send Message" />
         </form>
     )

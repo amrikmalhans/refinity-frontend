@@ -1,9 +1,9 @@
 import React from 'react'
-import styles from '../../styles/contactPage/form.module.css'
+
 
 export const ContactForm = () => {
     return (
-        <form className={styles.Form}>
+        <form className="Form">
             <h4>Contact Us</h4>
             <label htmlFor="name">Full Name:</label>
             <input placeholder="Write your full name here.." type="text" id="name" name="name" /> 
