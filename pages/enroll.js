@@ -7,7 +7,7 @@ import { ContactForm } from '../components/contactPage/Form'
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Head>
         <title>Refinity</title>
       </Head>
@@ -18,6 +18,6 @@ export default function Home() {
         <Footer />
         <MainFooter />
       </main>
-    </div>
+    </>
   )
 }

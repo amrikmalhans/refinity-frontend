@@ -7,7 +7,7 @@ import { MainFooter } from '../components/mainFooter'
   
 export default function Home() {
   return (
-    <div>
+    <>
       <Head>
         <title>Refinity</title>
       </Head>
@@ -19,6 +19,6 @@ export default function Home() {
         <Footer />
         <MainFooter />
       </main>
-    </div>
+    </>
   )
 }

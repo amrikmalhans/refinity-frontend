@@ -6,7 +6,7 @@ import { Footer } from '../components/Footer'
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Head>
         <title>Refinity</title>
       </Head>
@@ -17,6 +17,6 @@ export default function Home() {
         <Testimonial />
         <Footer />
       </main>
-    </div>
+    </>
   )
 }
