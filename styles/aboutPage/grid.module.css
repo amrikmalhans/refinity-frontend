@@ -1,0 +1,15 @@
+.Founders {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Founders div img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+}
+
+.Founders div {
+    flex: 0 0 calc(16.66% - 10px);
+}

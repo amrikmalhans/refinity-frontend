@@ -1,0 +1,7 @@
+.Header {
+    display: flex;
+    flex-direction: column;
+    max-width: 70vw;
+    margin: 15vh auto;
+    text-align: center;
+}
