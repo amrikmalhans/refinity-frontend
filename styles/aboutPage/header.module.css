@@ -5,3 +5,15 @@
     margin: 15vh auto;
     text-align: center;
 }
+
+@media (max-width: 800px) {
+    .Header {
+        display: flex;
+        flex-direction: column;
+        max-width: 80vw;
+        margin: 0 auto;
+        margin-top: 18vh;
+        margin-bottom: 5vh;
+        text-align: center;
+    }
+}

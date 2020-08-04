@@ -3,7 +3,8 @@ import styles from "../../styles/aboutPage/grid.module.css";
 
 export const Founders = () => {
     return (
-        <div className={styles.Founders}>
+        <main className={styles.Main}>
+        <div className={styles.Grid1}>
             <div>
                 <img src="/img1.jpg" alt="img1" />
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolore corrupti veritatis optio esse</p>
@@ -18,8 +19,9 @@ export const Founders = () => {
                 <img src="/img3.jpg" alt="img3" />
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolore corrupti veritatis optio esse</p>
             </div>
-
-            <div>
+        </div>
+        <div className={styles.Grid2}>
+        <div>
                 <img src="/img4.jpg" alt="img4" />
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolore corrupti veritatis optio esse</p>
             </div>
@@ -29,5 +31,6 @@ export const Founders = () => {
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolore corrupti veritatis optio esse</p>
             </div>
         </div>
+    </main>
     )
 }
